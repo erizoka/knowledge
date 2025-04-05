@@ -28,7 +28,7 @@ const routes = [{
     name: 'articleById',
     path: '/articles/:id',
     component: ArticleById
-},{
+}, {
     name: 'auth',
     path: '/auth',
     component: Auth
@@ -42,7 +42,7 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
     const json = localStorage.getItem(userKey)
 
-    if(to.matched.some(record => record.meta.requiresAdmin)){
+    if (to.matched.some(record => record.meta.requiresAdmin)) {
         const user = JSON.parse(json)
         user && user.admin ? next() : next({ path: '/' })
     } else {
