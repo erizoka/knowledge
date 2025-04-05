@@ -1,6 +1,6 @@
 # Knowledge
 
-<img src="/packages/docs/index.png" alt="Página Inicial">
+<img src="/frontend/public/dashboard.png" alt="Página Inicial">
 
 > Projeto base de conhecimento feito no curso da C3der com backend em JavaScript, Knex e Node v12 e frontend com Vue 2, Vue Router, Vuex e BootstrapVue.
 
